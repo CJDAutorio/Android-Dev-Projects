@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ticketPriceLabel"
+        android:layout_width="87dp"
+        android:layout_height="22dp"
+        android:text="Ticket Price:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <TextView
+        android:id="@+id/discountLabel"
+        android:layout_width="67dp"
+        android:layout_height="22dp"
+        android:text="Discount:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticketPriceLabel"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <EditText
+        android:id="@+id/editTicketPrice"
+        android:layout_width="187dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="Enter Ticket Price"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#595757"
+        android:textColorHint="#757575"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toEndOf="@+id/ticketPriceLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074" />
+
+    <RadioGroup
+        android:id="@+id/discountRadioGroup"
+        android:layout_width="180dp"
+        android:layout_height="274dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toEndOf="@+id/discountLabel"
+        app:layout_constraintTop_toBottomOf="@+id/editTicketPrice"
+        app:layout_constraintVertical_bias="0.06999999">
+
+        <RadioButton
+            android:id="@+id/discountRadio5"
+            android:layout_width="193dp"
+            android:layout_height="55dp"
+            android:text="5%"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/discountRadio10"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="10%"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/discountRadio15"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="15%"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/discountRadio20"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="20%"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/discountRadio50"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="50%"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/discountedPriceLabel"
+        android:layout_width="133dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="28dp"
+        android:text="Discounted Price:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <TextView
+        android:id="@+id/discountedPriceResult"
+        android:layout_width="111dp"
+        android:layout_height="23dp"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toEndOf="@+id/discountedPriceLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="224dp"
+        android:layout_height="47dp"
+        android:text="Calculate"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691" />
+
+    <Button
+        android:id="@+id/clearButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="11dp"
+        android:text="Clear"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

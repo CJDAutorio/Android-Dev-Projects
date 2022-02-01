@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Main</string>
+    <string name="string_welcome_label_main">Welcome!</string>
+    <string name="string_avatar_button_main">Register</string>
+    <string name="string_name_label_register">Name:</string>
+    <string name="string_name_edittext_hint_register">Enter Name</string>
+    <string name="string_email_label_register">Email:</string>
+    <string name="string_email_edittext_hint_register">Enter Email</string>
+    <string name="string_id_label_register">ID:</string>
+    <string name="string_id_edittext_hint_register">Enter ID</string>
+    <string name="string_dept_label_register">Dept:</string>
+    <string name="string_dept_button_register">Select</string>
+    <string name="string_dept_text_register"></string>
+    <string name="string_submit_button_register">Submit</string>
+    <string name="string_cs_selectdept">Computer Science</string>
+    <string name="string_sis_selectdept">Software Info. Systems</string>
+    <string name="string_bio_selectdept">Bioinformatics</string>
+    <string name="string_ds_selectdept">Data Science</string>
+    <string name="string_cancelButton_selectdept">Cancel</string>
+    <string name="string_selectButton_selectdept">Select</string>
+</resources>
