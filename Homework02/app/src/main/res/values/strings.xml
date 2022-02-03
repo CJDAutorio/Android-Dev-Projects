@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Homework02</string>
+    <string name="main_taskcount_label">You have %1$d tasks</string>
+    <string name="main_taskupcoming_label">Upcoming Tasks</string>
+    <string name="main_viewtasks_button">VIEW TASKS</string>
+    <string name="main_createtask_button">CREATE TASK</string>
+    <string name="main_taskalert_alert">Select Task</string>
+    <string name="main_taskalert_cancel">Cancel</string>
+    <string name="display_taskinfo_label">Task Information</string>
+    <string name="display_taskname_label">Name:</string>
+    <string name="display_taskdate_label">Date:</string>
+    <string name="display_taskpri_label">Priority:</string>
+    <string name="display_taskcanel_button">CANCEL</string>
+    <string name="display_taskdelete_button">DELETE</string>
+    <string name="create_name_label">Name:</string>
+    <string name="create_name_hint">Task Name</string>
+    <string name="create_date_label">Date:</string>
+    <string name="create_date_button">Set date</string>
+    <string name="create_priority_label">Priority:</string>
+    <string name="create_priority_radio_high">High</string>
+    <string name="create_priority_radio_med">Medium</string>
+    <string name="create_priority_radio_low">Low</string>
+    <string name="create_cancel_button">CANCEL</string>
+    <string name="create_submit_button">SUBMIT</string>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">InClass04</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_login_button">Login</string>
+    <string name="login_newaccount_button">Create New Account</string>
+    <string name="name_hint">Name</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="submit_button">Submit</string>
+    <string name="register_cancel_button">Cancel</string>
+    <string name="account_welcome_header">Welcome!</string>
+    <string name="account_edit_button">Edit Profile</string>
+    <string name="account_logout_button">Log Out</string>
+</resources>
