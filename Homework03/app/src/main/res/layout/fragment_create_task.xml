@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateTaskFragment">
+
+    <TextView
+        android:id="@+id/create_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <Button
+        android:id="@+id/create_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/setdate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toEndOf="@+id/create_date_label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <TextView
+        android:id="@+id/create_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <EditText
+        android:id="@+id/create_name_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/taskname"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/create_name_label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <TextView
+        android:id="@+id/create_date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/create_date_button"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@+id/create_date_label"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <TextView
+        android:id="@+id/create_pri_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/priority"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <RadioGroup
+        android:id="@+id/create_pri_radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/create_pri_high"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/create_pri_label"
+        app:layout_constraintTop_toBottomOf="@+id/create_pri_label"
+        app:layout_constraintVertical_bias="0.01999998">
+
+        <RadioButton
+            android:id="@+id/create_pri_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/high" />
+
+        <RadioButton
+            android:id="@+id/create_pri_med"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/create_pri_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/low" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/create_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616" />
+
+    <Button
+        android:id="@+id/create_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

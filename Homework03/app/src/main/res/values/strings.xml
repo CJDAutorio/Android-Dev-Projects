@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Homework03</string>
+    <string name="taskcount">You have %1$d tasks</string>
+    <string name="upcomingtasks">Upcoming Tasks</string>
+    <string name="viewtasks">View Tasks</string>
+    <string name="createtask">Create Task</string>
+    <string name="selecttask">Select Task</string>
+    <string name="taskinfo">Task Information</string>
+    <string name="name">Name:</string>
+    <string name="date">Date:</string>
+    <string name="priority">Priority:</string>
+    <string name="delete">Delete</string>
+    <string name="taskname">Task Name</string>
+    <string name="setdate">Set date</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="submit">Submit</string>
+    <string name="error_entries">Error! Please check the name and/or date!</string>
+    <string name="cancel">Cancel</string>
+</resources>
