@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/loginFragmentContainer"
+        android:id="@+id/fragmentContainer"
         android:name="edu.uncc.itcs4180.inclass04.LoginFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -15,4 +15,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
