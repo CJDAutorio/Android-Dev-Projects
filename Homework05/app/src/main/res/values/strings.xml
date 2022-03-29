@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Homework05</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="create_post">Create Post</string>
+    <string name="logout">Logout</string>
+    <string name="welcome">Welcome %1$s</string>
+    <string name="showing_page">Showing page %1$d out of %2$d</string>
+    <string name="date_at_time">%1$s at %2$s</string>
+    <string name="enter_post">Enter Post</string>
+    <string name="login_unfilled">Please enter a valid email and password.</string>
+    <string name="login_error">Wrong email/password.</string>
+    <string name="register_unfilled">Please enter a valid name, email, and password.</string>
+    <string name="register_error">Registration failed, please try again later.</string>
+    <string name="post_unfilled">Please enter a post under 100 characters.</string>
+    <string name="auth_token">auth_token</string>
+    <string name="auth_user_id">auth_user_id</string>
+    <string name="auth_user_fullname">auth_user_fullname</string>
+</resources>

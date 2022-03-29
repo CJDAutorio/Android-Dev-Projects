@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Homework006</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="forums">Forums</string>
+    <string name="logout">Logout</string>
+    <string name="new_forum">New Forum</string>
+    <string name="forum_title">Forum Title</string>
+    <string name="forum_description">Forum Description</string>
+    <string name="num_likes">%1$d Likes</string>
+    <string name="login_unfilled">Please input a valid email and password.</string>
+    <string name="register_unfilled">Please input a valid name, email and password.</string>
+    <string name="num_comments">%1$d Comments</string>
+    <string name="write_comment">Write Comment</string>
+    <string name="post">Post</string>
+    <string name="delete_post">Deleted post!</string>
+    <string name="liked_post">Liked post!</string>
+    <string name="unliked_post">Unliked post!</string>
+    <string name="created_post">Created post!</string>
+    <string name="failure">Failure: </string>
+    <string name="unfilled_create">Please fill out the title and description fields.</string>
+    <string name="delete_comment">Deleted comment!</string>
+    <string name="created_comment">Created comment!</string>
+    <string name="unfilled_comment">Please enter a comment.</string>
+</resources>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MidtermExam</string>
+    <string name="no_of_records">No. of Records</string>
+    <string name="total_expenses">Total Expenses</string>
+    <string name="expenses_summary">Expenses Summary</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="name">Name:</string>
+    <string name="expense_name">Expense Name</string>
+    <string name="amount">Amount:</string>
+    <string name="expense_amount">Expense Amount</string>
+    <string name="date">Date:</string>
+    <string name="none">None</string>
+    <string name="category">Category:</string>
+    <string name="set_date">Set Date</string>
+    <string name="pick_category">Pick Category</string>
+    <string name="cancel">CANCEL</string>
+    <string name="submit">SUBMIT</string>
+    <string name="error_entries">Please check inputs!</string>
+</resources>
