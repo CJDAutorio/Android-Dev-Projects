@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Homework07</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="social_shopping">Social Shopping</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="added_users">Added Users</string>
+    <string name="all_users">All Users</string>
+    <string name="cart">Cart</string>
+    <string name="add_users">Add Users</string>
+    <string name="add_item">Add Item</string>
+    <string name="logout">Logout</string>
+    <string name="item_name">Item Name</string>
+    <string name="item_price">Item Price</string>
+    <string name="back">Back</string>
+    <string name="login_unfilled">Please fill out the login fields and try again.</string>
+    <string name="register_unfilled">Please fill out the register fields and try again.</string>
+    <string name="leave_list">Leave List</string>
+</resources>
