@@ -2,7 +2,9 @@ package edu.uncc.itcs4180.homework07;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.text.Layout;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -29,7 +31,11 @@ public class CartRecyclerViewAdapter extends RecyclerView.Adapter<CartRecyclerVi
     @NonNull
     @Override
     public CartViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cart_row_item, parent, false);
+
+        CartViewHolder cartViewHolder = new CartViewHolder(view);
+
+        return cartViewHolder;
     }
 
     @Override

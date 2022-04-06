@@ -2,6 +2,7 @@ package edu.uncc.itcs4180.homework07;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,9 +12,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class CartFragment extends Fragment {
@@ -108,11 +113,46 @@ public class CartFragment extends Fragment {
         Log.d(TAG, "populateList function running");
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        final DocumentReference documentReference = db.collection()
+        final DocumentReference documentReference = db.collection("shopping_carts").document(cartId);
+
+        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if (documentSnapshot != null && documentSnapshot.exists()) {
+                    Log.d(TAG, "Cart id: " + documentSnapshot.getId());
+                    Log.d(TAG, "Cart data: " + documentSnapshot.getData());
+                } else {
+                    Log.d(TAG, "Cart data: null");
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT);
+            }
+        });
+    }
+
+    private void deleteItem() {
+        Log.d(TAG, "deleteItem function running");
+
     }
 
     private void deleteCart() {
         Log.d(TAG, "deleteCart function running");
 
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db.collection("shopping_carts").document(cartId).delete()
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        Log.d(TAG, "deleteCart function running");
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(getContext(), e.getMessage(), Toast.LENGTH_SHORT);
+            }
+        });
     }
 }
