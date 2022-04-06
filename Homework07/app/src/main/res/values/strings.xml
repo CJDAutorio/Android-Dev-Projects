@@ -23,4 +23,8 @@
     <string name="create">Create</string>
     <string name="cart_list">Cart List</string>
     <string name="generic_unfilled">Please fill out the fields and try again.</string>
+    <string name="owner_name">Owner: %1$s</string>
+    <string name="num_items">Number of items: %1$d</string>
+    <string name="total_price">Total price: %1$s</string>
+    <string name="delete">Delete</string>
 </resources>
