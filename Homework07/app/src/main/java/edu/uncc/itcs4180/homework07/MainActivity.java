@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             Log.d(TAG, "Current user: " + mAuth.getCurrentUser().getUid());
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.fragmentContainerView, new CartFragment())
+                    .add(R.id.fragmentContainerView, new CartListFragment())
                     .commit();
         }
     }

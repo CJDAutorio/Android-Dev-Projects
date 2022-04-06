@@ -20,4 +20,7 @@
     <string name="login_unfilled">Please fill out the login fields and try again.</string>
     <string name="register_unfilled">Please fill out the register fields and try again.</string>
     <string name="leave_list">Leave List</string>
+    <string name="create">Create</string>
+    <string name="cart_list">Cart List</string>
+    <string name="generic_unfilled">Please fill out the fields and try again.</string>
 </resources>
