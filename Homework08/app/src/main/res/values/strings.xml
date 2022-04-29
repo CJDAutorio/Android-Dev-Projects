@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Homework08</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="gas_stations">Gas Stations</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="find_directions">Find Directions</string>
+    <string name="reset">Reset</string>
+    <string name="fields_unfilled">Please enter a start and end destination.</string>
+    <string name="api_key">AIzaSyCWgx5hYKbV9gh9sw3ZVltuRyAUtnIozh0</string>
+</resources>

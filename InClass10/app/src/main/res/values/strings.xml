@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">InClass10</string>
+    <string name="gpa_num">GPA: %1$f</string>
+    <string name="hours_num">Hours: %1$d</string>
+    <string name="courses">Courses</string>
+    <string name="num_credit_hours">%1$d Credit Hours</string>
+    <string name="course_number">Course Number</string>
+    <string name="course_name">Course Name</string>
+    <string name="credit_hours">Credit Hours</string>
+    <string name="course_grade">Course Grade</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="form_unfilled">Please fill the forms and try again.</string>
+    <string name="grades">Grades</string>
+    <string name="add_course">Add Course</string>
+</resources>
